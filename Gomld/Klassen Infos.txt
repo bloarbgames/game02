@@ -1,0 +1,23 @@
+
+
+Der Krieger:
+
+- Des Kriegers Waffen sind ein Einhandschwert und ein Schild in den jeweiligen Händen.
+- er kann sowohl mit dem Schwert zuhauen als auch mit dem Schild Schaden blocken bzw. verringern
+- nur Nahkampf stark aber dafür durch das Schild eine hohe Verteidigung
+
+
+
+Der Schütze:
+
+- Der Schütze ist nur im besitz eines bogens
+- Er verschießt Pfeile und kann aus brennzlichen Situationen dank einer Ausweichrolle entkommen
+- Guter Fehrnkämpfer und sehr mobil durch die Rolle bzw. den Dash
+
+
+
+Der Magier:
+
+- Ist im besitz eines Stabes
+- Er verschießt einen sehr starken Feuerball, kann allerding auch mehrere Feuerbälle in einem begrenzten Winkel vor sich Schießen
+- Starker aber langsamer Angriff und gut für Gegner Massen

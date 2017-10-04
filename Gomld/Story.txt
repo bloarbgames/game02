@@ -1,0 +1,72 @@
+Der Charakter startet an seiner Hütte im Wald die aus irgendeinem Grunde in Flammen steht, als er sich nähert entdeckt er seine Frau die gerade von einem Monster verschleppt wird.
+Daraufhin stürmt er dem Monster hinterher, da er weiß das seine erfolgschancen in einem Faustkampf viel zu gering sind sieht er sich um was ihm bei dem Kampf helfen kann.
+Er findet auf dem Boden eine Art Schwert und ein rundes Schild das er noch nie zuvor gesehen hat, zu seiner linken sieht er einen Bogen und seinen Köcher den er damals zum jagen benutzt hat, hinter Ihm liegt eine Art Stock, ein Stab der leichte Magische anzeichen ausstrahlt.
+
+Er entscheidet sich für eine der drei Waffen und stürmt dem Monster hinter her.
+
+---->Beginn des Tutorials
+
+//Inhalt folgt
+
+---->Ende des Tutorials
+
+Nachdem er die Monster vorsich besiegt hatte war keine Spur seiner Frau zu sehen, nur einige unheimlichen Fußspuren verliefen am Rande des Waldes.
+
+Er folgt denen in der Hoffnung seine frau zu finden.
+
+Landet in Gebiet1
+
+---->beginn Gebiet1
+
+//Inhalt folgt
+
+---->ende Gebiet 1
+
+Nachdem er den "Endboss" von Gebiet1 besigt hatte rennte er verzweifelt in Richtung seiner Frau.
+Plötzlich tauchte ein "Endboss Gebiet2" auf und krallte sich die Braut und rannte in gebiet 2 hinein
+Ohne viel nachzudenken rannte der Charakter in "Gebiet2" hinterher
+
+----> Anfang Gebiet2
+
+// Inhalt folgt
+
+----> Ende Gebiet2
+
+Endlich hielt er seine Frau in den armen, glücklich wollen beide zurück nachhause gehen
+Plötzlich werden sie von "monster Gebiet1 und Gebiet2" angegriffen
+Seine Frau greift in Ihren Rock und zieht dort "Irgendeine Waffe" hervor um Ihren Mann zu unterstützen (stationäre Hilfe)
+
+----> beginn des Kampfes gegen die Gegner Wellen
+
+// gegner aus den vorherigen gebieten erscheinen in Wellen und greifen den CHarakter und sein Weib an
+
+----> ende des Kampfes in Wellen
+
+die beiden Endbosse des "Gebiet1 und des Gebiet2" erscheinen
+
+----> Kampf gegen die beiden Endbosse beginnt
+
+// wenn die Frau sterben sollte ist auch Game Over
+
+----> Ende des Kampfes
+
+
+
+
+
+Happy End
+
+Sie gehen Hand in Hand richtung Sonnenuntergang
+
+
+
+Plot Twist
+
+die Frau ist der wahre Endboss
+
+
+
+
+troll
+
+Die frau ist von beiden Endbossn Schwanger und erwartet Baby´s
