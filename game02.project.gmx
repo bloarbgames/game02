@@ -25,6 +25,9 @@
     <sprite>sprites\spr_slime</sprite>
     <sprite>sprites\spr_dmg</sprite>
     <sprite>sprites\spr_expr</sprite>
+    <sprite>sprites\spr_health</sprite>
+    <sprite>sprites\spr_sign</sprite>
+    <sprite>sprites\spr_dialogue_box</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_gras</background>
@@ -47,6 +50,7 @@
       <scripts name="enemy_helper_scripts">
         <script>scripts\scr_enemy_chose_next_state.gml</script>
         <script>scripts\scr_enemy_check_for_player.gml</script>
+        <script>scripts\scr_chance.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -57,13 +61,18 @@
     <object>objects\obj_dash_effect</object>
     <object>objects\obj_slime</object>
     <object>objects\obj_lifeform_parent</object>
-    <object>objects\object6</object>
     <object>objects\obj_damage</object>
     <object>objects\obj_player_stats</object>
     <object>objects\obj_expr</object>
+    <object>objects\obj_health</object>
+    <object>objects\obj_door</object>
+    <object>objects\obj_speaker</object>
+    <object>objects\obj_dialog</object>
+    <object>objects\obj_sign</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_01</room>
+    <room>rooms\rm_02</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

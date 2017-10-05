@@ -59,6 +59,11 @@ targety = 0;
             <kind>1</kind>
             <string>/// create the exprience
 instance_create(x,y,obj_expr);
+
+// drop a health pack
+if (scr_chance(.5)) {
+    instance_create(x + random_range(-4,4) , y + random_range(-4 , 4), obj_health);
+    }
 </string>
           </argument>
         </arguments>
