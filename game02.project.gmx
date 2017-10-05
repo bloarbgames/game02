@@ -28,6 +28,7 @@
     <sprite>sprites\spr_health</sprite>
     <sprite>sprites\spr_sign</sprite>
     <sprite>sprites\spr_dialogue_box</sprite>
+    <sprite>sprites\spr_test</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_gras</background>
@@ -53,6 +54,7 @@
         <script>scripts\scr_chance.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\scr_string_copy_words.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_wall</object>
@@ -69,10 +71,13 @@
     <object>objects\obj_speaker</object>
     <object>objects\obj_dialog</object>
     <object>objects\obj_sign</object>
+    <object>objects\obj_input</object>
+    <object>objects\obj_pause_menue</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_01</room>
     <room>rooms\rm_02</room>
+    <room>rooms\rm_pause</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

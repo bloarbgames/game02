@@ -34,6 +34,7 @@ yoffset = -40;
 text[0] = "Warning, Slimes ahead!";
 text[1] = "Piss of my yard!";
 text[2] = "You will DIE! &gt;_";
+text[3] = "Selbstzerstoerung JETZT!!!!";
 </string>
           </argument>
         </arguments>
@@ -52,8 +53,8 @@ text[2] = "You will DIE! &gt;_";
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>0,8</point>
-    <point>16,8</point>
+    <point>0,10</point>
+    <point>16,10</point>
     <point>16,16</point>
     <point>0,16</point>
   </PhysicsShapePoints>
