@@ -41,15 +41,16 @@ if (obj_input.atk_key1) {
 }
 
 // spellkey
-if (obj_input.spell_key and obj_player_stats.fireballcd >9) {
+if (obj_input.spell_key and obj_player_stats.fireballcd >=1) {
     var p = instance_create(x,y, obj_fireball);
+    audio_play_sound(snd_fireball,0,false);
     var xforce = lengthdir_x(20, face*90);
     var yforce = lengthdir_y(20, face*90);
     p.creator = id;
     with (p) {
         physics_apply_impulse(x,y,xforce,yforce);
     }
-    obj_player_stats.fireballcd -= 8;
+    obj_player_stats.fireballcd -= 1;
     }
 // get the axis
 var xaxis = (obj_input.d_key - obj_input.a_key);
@@ -75,6 +76,7 @@ phy_position_x += hspd;
 phy_position_y += vspd;
 
 if (len != 0) {
+    audio_sound_gain(snd_hunter_walk,1,5000);
     if !audio_is_playing(snd_hunter_walk) {
         audio_play_sound(snd_hunter_walk,1,true);
         }

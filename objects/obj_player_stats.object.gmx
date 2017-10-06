@@ -110,8 +110,8 @@ if (stamina &lt;= maxstamina &amp;&amp; alarm[0] == -1) {
     }
 
 // fireball timer
-if (fireballcd &lt; 10 &amp;&amp; alarm[0] == -1) {
-    fireballcd += room_speed/300;
+if (fireballcd &lt; 2 &amp;&amp; alarm[0] == -1) {
+    fireballcd += room_speed/3000;
     }   
         
 // pause the game
@@ -198,12 +198,13 @@ room_start_action = NEW_ROOM;
             <kind>1</kind>
             <string>/// draw the stats
 var roundedstam = floor(stamina);
+var roundefire = floor(fireballcd);
 draw_text(32,16, "HP: " + string(hp) + "/" + string(maxhp));
 draw_text(32,32, "Stamina: " + string(roundedstam) + "/" + string(maxstamina));
 draw_text(32,48, "Attackpower: " + string(attack));
 draw_text(32,64, "Experience: " + string(expr) + "/" + string(maxexpr));
 draw_text(32,80, "Level: " + string(level));
-draw_text(32,96, "Fireball charges: " + string(fireballcd));
+draw_text(32,96, "Fireball charges: " + string(roundefire));
 
 </string>
           </argument>
