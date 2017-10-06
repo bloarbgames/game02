@@ -116,6 +116,7 @@ script_execute(state);
             <kind>1</kind>
             <string>/// go to the next room through the door
 if (room_exists(other.new_room)) {
+    room_persistent = false;
     room_goto(other.new_room);
     x = other.new_x;
     y  = other.new_y;
@@ -239,6 +240,7 @@ if (state = scr_attack_state) {
             <kind>1</kind>
             <string>/// set fixed rotation
 phy_fixed_rotation = true;
+persistent = true;
 </string>
           </argument>
         </arguments>

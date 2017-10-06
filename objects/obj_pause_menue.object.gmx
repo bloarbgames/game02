@@ -98,15 +98,18 @@ if (alarm[0] &lt;= 0) {
         alarm[0] = room_speed/6;
             
     }
-    if (obj_input.dash_key) {
+    if (obj_input.enter_key) {
         switch (menue_index) {
             case 0:
+                obj_player_stats.room_start_action = RETURN;
                 room_goto(obj_player_stats.previous_room);
                 break;
             case 1:
                 scr_save_game();
                 break;
             case 2:
+                obj_player_stats.room_start_action = LOAD;
+                room_goto(obj_player_stats.previous_room);
                 break;
             case 3:
                 game_end();

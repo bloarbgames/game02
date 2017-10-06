@@ -168,13 +168,13 @@
     <instance objName="obj_wall" x="0" y="224" name="inst_CF96689D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="256" name="inst_3C7931CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="288" name="inst_4A212379" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_stats" x="64" y="32" name="inst_D9C212A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="352" y="32" name="inst_CEF87458" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="480" y="96" name="inst_AE0DB4A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="448" y="192" name="inst_FA006A0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="544" y="224" name="inst_CA7F3A54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="32" y="0" name="inst_E815A7A3" locked="0" code="new_room = rm_01;&#xA;new_x = 960;&#xA;new_y = 704;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="64" y="0" name="inst_4ACC3F50" locked="0" code="new_room = rm_01;&#xA;new_x = 960;&#xA;new_y = 704;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_expr" x="64" y="96" name="inst_19E8F7F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>
