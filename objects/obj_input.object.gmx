@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>/// initialize the input object
 scr_get_input();
-previous_room = room;
+
 </string>
           </argument>
         </arguments>
@@ -52,20 +52,6 @@ previous_room = room;
             <kind>1</kind>
             <string>/// get the input
 scr_get_input();
-
-// pause the game
-if (pause_key) {
-    if (room != rm_pause) {
-        if (instance_exists(obj_player)) {
-            obj_player.persistent = false;
-            }
-            previous_room = room;
-            room_goto(rm_pause);
-    } else {
-        room_goto(previous_room);
-        }
-        }
-        
 </string>
           </argument>
         </arguments>

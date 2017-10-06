@@ -55,6 +55,7 @@
       </scripts>
     </scripts>
     <script>scripts\scr_string_copy_words.gml</script>
+    <script>scripts\scr_save_game.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_wall</object>
