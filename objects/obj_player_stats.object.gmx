@@ -34,6 +34,7 @@ expr = 0;
 maxexpr = 3;
 level = 1;
 attack = 1;
+fireballcd = 0;
 
 // get the players xstart and ystart position
 if (instance_exists(obj_player)) {
@@ -107,7 +108,12 @@ hp = 0;
 if (stamina &lt;= maxstamina &amp;&amp; alarm[0] == -1) {
     stamina += room_speed/300;
     }
-    
+
+// fireball timer
+if (fireballcd &lt; 10 &amp;&amp; alarm[0] == -1) {
+    fireballcd += room_speed/300;
+    }   
+        
 // pause the game
 if (obj_input.pause_key) {
     if (room != rm_pause) {
@@ -197,6 +203,8 @@ draw_text(32,32, "Stamina: " + string(roundedstam) + "/" + string(maxstamina));
 draw_text(32,48, "Attackpower: " + string(attack));
 draw_text(32,64, "Experience: " + string(expr) + "/" + string(maxexpr));
 draw_text(32,80, "Level: " + string(level));
+draw_text(32,96, "Fireball charges: " + string(fireballcd));
+
 </string>
           </argument>
         </arguments>

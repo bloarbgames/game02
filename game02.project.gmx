@@ -6,6 +6,15 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_slime_death</sound>
+    <sound>sound\snd_hunter_walk</sound>
+    <sound>sound\snd_sword_swing2</sound>
+    <sound>sound\snd_sword_swing3</sound>
+    <sound>sound\snd_menue_close</sound>
+    <sound>sound\snd_sword_swing</sound>
+    <sound>sound\snd_loot</sound>
+    <sound>sound\snd_menue_down</sound>
+    <sound>sound\snd_menue_up</sound>
+    <sound>sound\snd_open_menue</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
@@ -32,6 +41,9 @@
     <sprite>sprites\spr_dialogue_box</sprite>
     <sprite>sprites\spr_test</sprite>
     <sprite>sprites\spr_fireball</sprite>
+    <sprite>sprites\sprite20</sprite>
+    <sprite>sprites\sprite21</sprite>
+    <sprite>sprites\sprite22</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_gras</background>

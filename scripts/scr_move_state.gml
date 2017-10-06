@@ -41,7 +41,7 @@ if (obj_input.atk_key1) {
 }
 
 // spellkey
-if (obj_input.spell_key) {
+if (obj_input.spell_key and obj_player_stats.fireballcd >9) {
     var p = instance_create(x,y, obj_fireball);
     var xforce = lengthdir_x(20, face*90);
     var yforce = lengthdir_y(20, face*90);
@@ -49,6 +49,7 @@ if (obj_input.spell_key) {
     with (p) {
         physics_apply_impulse(x,y,xforce,yforce);
     }
+    obj_player_stats.fireballcd -= 8;
     }
 // get the axis
 var xaxis = (obj_input.d_key - obj_input.a_key);
@@ -73,8 +74,18 @@ vspd = lengthdir_y(len,dir);
 phy_position_x += hspd;
 phy_position_y += vspd;
 
+if (len != 0) {
+    if !audio_is_playing(snd_hunter_walk) {
+        audio_play_sound(snd_hunter_walk,1,true);
+        }
+    } else {
+    audio_stop_sound(snd_hunter_walk);
+    }
+    
+    
+
 // control the sprite
-image_speed = .2;
+image_speed = .15;
 if (len == 0) image_index = 0;
 
 switch (face) {

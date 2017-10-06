@@ -37,6 +37,23 @@ if (image_index >= 3 and attacked ==false) {
             yy=y+15
             break;
         }
+    
+    //random sound to play
+    //if audio_is_playing(snd_hunter_walk)
+    var rndsound = irandom(2);
+    switch (rndsound) {
+        case 0:
+            audio_play_sound(snd_sword_swing,2,false);
+            break;
+        case 1:
+            audio_play_sound(snd_sword_swing2,2,false);
+            break;
+        case 2:
+            audio_play_sound(snd_sword_swing2,2,false);
+            break;
+        }
+        
+    
     var damage = instance_create(xx,yy, obj_damage);
     damage.creator = id;
     damage.damage = obj_player_stats.attack
