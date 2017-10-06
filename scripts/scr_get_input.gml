@@ -7,3 +7,4 @@ dash_key = keyboard_check_pressed(vk_control);
 atk_key1 = keyboard_check_pressed(vk_alt);
 pause_key = keyboard_check_pressed(vk_escape);
 enter_key = keyboard_check_pressed(vk_enter);
+spell_key = keyboard_check_pressed(vk_space);

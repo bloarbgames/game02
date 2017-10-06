@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>/// Set fixed rotation
 event_inherited();
+phy_bullet = true ;
 hp = 3;
 attacked = false;
 spd = 2;

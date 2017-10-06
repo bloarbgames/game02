@@ -29,6 +29,7 @@
     <sprite>sprites\spr_sign</sprite>
     <sprite>sprites\spr_dialogue_box</sprite>
     <sprite>sprites\spr_test</sprite>
+    <sprite>sprites\spr_fireball</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_gras</background>
@@ -75,6 +76,8 @@
     <object>objects\obj_sign</object>
     <object>objects\obj_input</object>
     <object>objects\obj_pause_menue</object>
+    <object>objects\obj_projectile</object>
+    <object>objects\obj_fireball</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_01</room>

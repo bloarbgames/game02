@@ -39,6 +39,17 @@ if (obj_input.atk_key1) {
     image_index = 0;
     state = scr_attack_state;
 }
+
+// spellkey
+if (obj_input.spell_key) {
+    var p = instance_create(x,y, obj_fireball);
+    var xforce = lengthdir_x(20, face*90);
+    var yforce = lengthdir_y(20, face*90);
+    p.creator = id;
+    with (p) {
+        physics_apply_impulse(x,y,xforce,yforce);
+    }
+    }
 // get the axis
 var xaxis = (obj_input.d_key - obj_input.a_key);
 var yaxis = (obj_input.s_key - obj_input.w_key);
