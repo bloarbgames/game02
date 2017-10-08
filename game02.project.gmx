@@ -31,10 +31,7 @@
       </sprites>
     </sprites>
     <sprite>sprites\spr_rolfi</sprite>
-    <sprite>sprites\spr_wall</sprite>
-    <sprite>sprites\spr_door</sprite>
     <sprite>sprites\spr_player_shadow</sprite>
-    <sprite>sprites\spr_slime</sprite>
     <sprite>sprites\spr_dmg</sprite>
     <sprite>sprites\spr_expr</sprite>
     <sprite>sprites\spr_health</sprite>
@@ -45,6 +42,21 @@
     <sprite>sprites\sprite20</sprite>
     <sprite>sprites\sprite21</sprite>
     <sprite>sprites\sprite22</sprite>
+    <sprites name="enemys">
+      <sprite>sprites\spr_chinlin_stand_up</sprite>
+      <sprite>sprites\spr_chinlin_stand_down</sprite>
+      <sprite>sprites\spr_chinlin_run_down</sprite>
+      <sprite>sprites\spr_chinlin_run_up</sprite>
+      <sprite>sprites\spr_chinlin_run_right</sprite>
+      <sprite>sprites\spr_chinlin_stand_right</sprite>
+      <sprite>sprites\spr_slime</sprite>
+      <sprite>sprites\sprite30</sprite>
+    </sprites>
+    <sprite>sprites\sprite29</sprite>
+    <sprites name="walls">
+      <sprite>sprites\spr_door</sprite>
+      <sprite>sprites\spr_wall</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_gras</background>
@@ -65,6 +77,7 @@
       <script>scripts\scr_enemy_wander_state.gml</script>
       <script>scripts\scr_enemy_chase_state.gml</script>
       <scripts name="enemy_helper_scripts">
+        <script>scripts\scr_move_axis.gml</script>
         <script>scripts\scr_enemy_chose_next_state.gml</script>
         <script>scripts\scr_enemy_check_for_player.gml</script>
         <script>scripts\scr_chance.gml</script>
@@ -80,6 +93,7 @@
     <object>objects\obj_view</object>
     <object>objects\obj_dash_effect</object>
     <object>objects\obj_slime</object>
+    <object>objects\obj_enemy_chinlin</object>
     <object>objects\obj_lifeform_parent</object>
     <object>objects\obj_damage</object>
     <object>objects\obj_player_stats</object>
@@ -94,6 +108,9 @@
     <object>objects\obj_projectile</object>
     <object>objects\obj_fireball</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\timeline0</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\rm_01</room>
     <room>rooms\rm_02</room>
