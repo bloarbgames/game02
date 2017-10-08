@@ -50,18 +50,28 @@
       <sprite>sprites\spr_knight_right</sprite>
       <sprite>sprites\spr_knight_down</sprite>
       <sprite>sprites\spr_knight_left</sprite>
+      <sprites name="attack + weapon">
+        <sprite>sprites\spr_sword_move</sprite>
+        <sprite>sprites\spr_shield</sprite>
+      </sprites>
     </sprites>
     <sprites name="Ranger">
       <sprite>sprites\spr_ranger_up</sprite>
       <sprite>sprites\spr_ranger_right</sprite>
       <sprite>sprites\spr_ranger_down</sprite>
       <sprite>sprites\spr_ranger_left</sprite>
+      <sprites name="attack + sprites">
+        <sprite>sprites\spr_bow</sprite>
+      </sprites>
     </sprites>
     <sprites name="Mage">
       <sprite>sprites\spr_mage_up</sprite>
       <sprite>sprites\spr_mage_right</sprite>
       <sprite>sprites\spr_mage_down</sprite>
       <sprite>sprites\spr_mage_left</sprite>
+      <sprites name="attack + sprite">
+        <sprite>sprites\spr_staff</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
