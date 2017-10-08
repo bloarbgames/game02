@@ -45,6 +45,24 @@
     <sprite>sprites\sprite20</sprite>
     <sprite>sprites\sprite21</sprite>
     <sprite>sprites\sprite22</sprite>
+    <sprites name="knight">
+      <sprite>sprites\spr_knight_up</sprite>
+      <sprite>sprites\spr_knight_right</sprite>
+      <sprite>sprites\spr_knight_down</sprite>
+      <sprite>sprites\spr_knight_left</sprite>
+    </sprites>
+    <sprites name="Ranger">
+      <sprite>sprites\spr_ranger_up</sprite>
+      <sprite>sprites\spr_ranger_right</sprite>
+      <sprite>sprites\spr_ranger_down</sprite>
+      <sprite>sprites\spr_ranger_left</sprite>
+    </sprites>
+    <sprites name="Mage">
+      <sprite>sprites\spr_mage_up</sprite>
+      <sprite>sprites\spr_mage_right</sprite>
+      <sprite>sprites\spr_mage_down</sprite>
+      <sprite>sprites\spr_mage_left</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_gras</background>
