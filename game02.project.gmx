@@ -43,6 +43,7 @@
     <sprite>sprites\sprite21</sprite>
     <sprite>sprites\sprite22</sprite>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <sprites name="enemys">
       <sprite>sprites\spr_chinlin_stand_up</sprite>
       <sprite>sprites\spr_chinlin_stand_down</sprite>
@@ -87,6 +88,8 @@
       </sprites>
 >>>>>>> 7f7292eed9d019b7e5bc5f316ed050f4f4cdd32a
     </sprites>
+=======
+>>>>>>> parent of d589ed7... Ranger/knihgt/Mage sprites eingefügt
   </sprites>
   <backgrounds name="background">
     <background>background\bg_gras</background>
