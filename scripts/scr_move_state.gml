@@ -75,7 +75,7 @@ vspd = lengthdir_y(len,dir);
 phy_position_x += hspd;
 phy_position_y += vspd;
 
-if (len != 0) {
+/*if (len != 0) {
     audio_sound_gain(snd_hunter_walk,1,5000);
     if !audio_is_playing(snd_hunter_walk) {
         audio_play_sound(snd_hunter_walk,1,true);
@@ -83,7 +83,7 @@ if (len != 0) {
     } else {
     audio_stop_sound(snd_hunter_walk);
     }
-    
+*/  
     
 
 // control the sprite

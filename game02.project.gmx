@@ -16,6 +16,8 @@
     <sound>sound\snd_menue_up</sound>
     <sound>sound\snd_open_menue</sound>
     <sound>sound\snd_fireball</sound>
+    <sound>sound\snd_background_01</sound>
+    <sound>sound\sound12</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">

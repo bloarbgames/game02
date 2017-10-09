@@ -40,6 +40,7 @@ dir = 0;
 image_speed = 0;
 state = scr_move_state;
 face =RIGHT;
+audio_play_sound(snd_background_01,0,true);
 </string>
           </argument>
         </arguments>
