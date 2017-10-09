@@ -42,6 +42,7 @@
     <sprite>sprites\sprite20</sprite>
     <sprite>sprites\sprite21</sprite>
     <sprite>sprites\sprite22</sprite>
+<<<<<<< HEAD
     <sprites name="enemys">
       <sprite>sprites\spr_chinlin_stand_up</sprite>
       <sprite>sprites\spr_chinlin_stand_down</sprite>
@@ -56,6 +57,35 @@
     <sprites name="walls">
       <sprite>sprites\spr_door</sprite>
       <sprite>sprites\spr_wall</sprite>
+=======
+    <sprites name="knight">
+      <sprite>sprites\spr_knight_up</sprite>
+      <sprite>sprites\spr_knight_right</sprite>
+      <sprite>sprites\spr_knight_down</sprite>
+      <sprite>sprites\spr_knight_left</sprite>
+      <sprites name="attack + weapon">
+        <sprite>sprites\spr_sword_move</sprite>
+        <sprite>sprites\spr_shield</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Ranger">
+      <sprite>sprites\spr_ranger_up</sprite>
+      <sprite>sprites\spr_ranger_right</sprite>
+      <sprite>sprites\spr_ranger_down</sprite>
+      <sprite>sprites\spr_ranger_left</sprite>
+      <sprites name="attack + sprites">
+        <sprite>sprites\spr_bow</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Mage">
+      <sprite>sprites\spr_mage_up</sprite>
+      <sprite>sprites\spr_mage_right</sprite>
+      <sprite>sprites\spr_mage_down</sprite>
+      <sprite>sprites\spr_mage_left</sprite>
+      <sprites name="attack + sprite">
+        <sprite>sprites\spr_staff</sprite>
+      </sprites>
+>>>>>>> 7f7292eed9d019b7e5bc5f316ed050f4f4cdd32a
     </sprites>
   </sprites>
   <backgrounds name="background">
