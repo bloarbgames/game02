@@ -18,6 +18,7 @@
     <sound>sound\snd_fireball</sound>
     <sound>sound\snd_background_01</sound>
     <sound>sound\sound12</sound>
+    <sound>sound\snd_background_02</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
@@ -138,6 +139,10 @@
     <object>objects\obj_pause_menue</object>
     <object>objects\obj_projectile</object>
     <object>objects\obj_fireball</object>
+    <object>objects\obj_sword</object>
+    <object>objects\obj_staff</object>
+    <object>objects\obj_bow</object>
+    <object>objects\obj_weapon</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
