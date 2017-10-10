@@ -6,7 +6,7 @@
   <depth>-10</depth>
   <persistent>-1</persistent>
   <parentName>obj_lifeform_parent</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_player_down</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -40,7 +40,8 @@ dir = 0;
 image_speed = 0;
 state = scr_move_state;
 face =RIGHT;
-audio_play_sound(snd_background_01,0,true);
+audio_play_sound(snd_background_02,0,true);
+
 </string>
           </argument>
         </arguments>

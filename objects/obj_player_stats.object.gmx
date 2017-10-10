@@ -35,6 +35,7 @@ maxexpr = 3;
 level = 1;
 attack = 1;
 fireballcd = 0;
+class = CLASS_NORMAL;
 
 // get the players xstart and ystart position
 if (instance_exists(obj_player)) {

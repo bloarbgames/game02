@@ -84,24 +84,77 @@ phy_position_y += vspd;
     audio_stop_sound(snd_hunter_walk);
     }
 */  
-    
 
-// control the sprite
+// set class sprites
+
+//control the sprite
 image_speed = .15;
 if (len == 0) image_index = 0;
 
 switch (face) {
     case RIGHT:
-        sprite_index = spr_knight_right;
+        switch (obj_player_stats.class) {
+            case CLASS_NORMAL:
+                sprite_index = spr_player_right;
+                break;
+            case CLASS_RANG:
+                sprite_index = spr_rang_right;
+                break;
+            case CLASS_MAGE:
+                sprite_index = spr_mage_right;
+                break;
+            case CLASS_KNIGHT:
+                sprite_index = spr_knight_right;
+                break;
+                }
         break;
     case LEFT:
-        sprite_index = spr_knight_left;
+        switch (obj_player_stats.class) {
+            case CLASS_NORMAL:
+                sprite_index = spr_player_left;
+                break;
+            case CLASS_RANG:
+                sprite_index = spr_rang_left;
+                break;
+            case CLASS_MAGE:
+                sprite_index = spr_mage_left;
+                break;
+            case CLASS_KNIGHT:
+                sprite_index = spr_knight_left;
+                break;
+                }
         break;
     case UP:
-        sprite_index = spr_knight_up;
-        break;
+        switch (obj_player_stats.class) {
+            case CLASS_NORMAL:
+                sprite_index = spr_player_up;
+                break;
+            case CLASS_RANG:
+                sprite_index = spr_rang_up;
+                break;
+            case CLASS_MAGE:
+                sprite_index = spr_mage_up;
+                break;
+            case CLASS_KNIGHT:
+                sprite_index = spr_knight_up;
+                break;
+                }
+                break;
     case DOWN:
-        sprite_index = spr_knight_down;
-        break;
+        switch (obj_player_stats.class) {
+            case CLASS_NORMAL:
+                sprite_index = spr_player_down;
+                break;
+            case CLASS_RANG:
+                sprite_index = spr_rang_down;
+                break;
+            case CLASS_MAGE:
+                sprite_index = spr_mage_down;
+                break;
+            case CLASS_KNIGHT:
+                sprite_index = spr_knight_down;
+                break;
+                }
+                break;
     }   
-    
+   
