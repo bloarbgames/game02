@@ -59,6 +59,35 @@
       <sprite>sprites\spr_door</sprite>
       <sprite>sprites\spr_wall</sprite>
     </sprites>
+    <sprites name="Knight">
+      <sprite>sprites\spr_knight_up</sprite>
+      <sprite>sprites\spr_knight_right</sprite>
+      <sprite>sprites\spr_knight_down</sprite>
+      <sprite>sprites\spr_knight_left</sprite>
+      <sprites name="attack">
+        <sprite>sprites\spr_knight_sword</sprite>
+        <sprite>sprites\spr_knight_shield</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Ranger">
+      <sprite>sprites\spr_rang_up</sprite>
+      <sprite>sprites\spr_rang_right</sprite>
+      <sprite>sprites\spr_rang_down</sprite>
+      <sprite>sprites\spr_rang_left</sprite>
+      <sprites name="attack">
+        <sprite>sprites\spr_rang_bow</sprite>
+        <sprite>sprites\spr_rang_arrow</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Mage">
+      <sprite>sprites\spr_mage_up</sprite>
+      <sprite>sprites\spr_mage_right</sprite>
+      <sprite>sprites\spr_mage_down</sprite>
+      <sprite>sprites\spr_mage_left</sprite>
+      <sprites name="attack">
+        <sprite>sprites\spr_mage_staff</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_gras</background>
