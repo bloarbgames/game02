@@ -35,6 +35,7 @@ maxexpr = 3;
 level = 1;
 attack = 1;
 fireballcd = 0;
+flamethrowercd = 0;
 class = CLASS_NORMAL;
 
 // get the players xstart and ystart position
@@ -115,6 +116,11 @@ if (fireballcd &lt; 2 &amp;&amp; alarm[0] == -1) {
     fireballcd += room_speed/3000;
     }   
         
+// flamethrower timer 
+if (flamethrowercd &lt; 2 &amp;&amp; alarm[0] == -1) {
+    flamethrowercd += room_speed/3000;
+    }     
+  
 // pause the game
 if (obj_input.pause_key) {
     if (room != rm_pause) {
@@ -200,12 +206,14 @@ room_start_action = NEW_ROOM;
             <string>/// draw the stats
 var roundedstam = floor(stamina);
 var roundefire = floor(fireballcd);
+var roundflame = floor(flamethrowercd);
 draw_text(32,16, "HP: " + string(hp) + "/" + string(maxhp));
 draw_text(32,32, "Stamina: " + string(roundedstam) + "/" + string(maxstamina));
 draw_text(32,48, "Attackpower: " + string(attack));
 draw_text(32,64, "Experience: " + string(expr) + "/" + string(maxexpr));
 draw_text(32,80, "Level: " + string(level));
 draw_text(32,96, "Fireball charges: " + string(roundefire));
+draw_text(32,112, "Flamethrower charges: " + string(roundflame));
 
 </string>
           </argument>

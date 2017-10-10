@@ -1,6 +1,6 @@
 /// scr_move_state
 
-if (obj_input.dash_key) {
+if (obj_input.dash_key and obj_player_stats.class = CLASS_RANG) {
     var xdir = lengthdir_x(8,face*90);
     var ydir = lengthdir_y(8,face*90);
     var speaker =  instance_place(x+xdir,y+ydir,obj_speaker)
@@ -41,12 +41,12 @@ if (obj_input.atk_key1) {
 }
 
 // call fireball state
-if (obj_input.spell_key and obj_player_stats.fireballcd >=1) {
+if (obj_input.spell_key and obj_player_stats.fireballcd >=1 and obj_player_stats.class = CLASS_MAGE) {
     state = scr_fireball_state;
 }
 
 //call flamethrower state
-if (obj_input.spell_key2) {
+if (obj_input.spell_key2 and obj_player_stats.flamethrowercd >= 25 and obj_player_stats.class = CLASS_MAGE) {
     state = scr_flamethrower_state;
 }
 

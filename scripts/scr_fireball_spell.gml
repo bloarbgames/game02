@@ -10,7 +10,7 @@ p.creator = id;
 with (p) {
     physics_apply_impulse(x,y,xforce,yforce);
 }
-obj_player_stats.fireballcd -= 1;
+obj_player_stats.flamethrowercd -= 1;
 
 var angle = 95
 var p = instance_create(x,y, obj_fireball);
@@ -21,7 +21,7 @@ p.creator = id;
 with (p) {
     physics_apply_impulse(x,y,xforce,yforce);
 }
-obj_player_stats.fireballcd -= 1;
+obj_player_stats.flamethrowercd -= 1;
 
 var angle = 85
 var p = instance_create(x,y, obj_fireball);
@@ -32,4 +32,4 @@ p.creator = id;
 with (p) {
     physics_apply_impulse(x,y,xforce,yforce);
 }
-obj_player_stats.fireballcd -= 1;
+obj_player_stats.flamethrowercd -= 1;
