@@ -101,6 +101,9 @@
       <script>scripts\scr_dash_state.gml</script>
       <script>scripts\scr_get_face.gml</script>
       <script>scripts\scr_get_input.gml</script>
+      <script>scripts\scr_fireball_state.gml</script>
+      <script>scripts\scr_flamethrower_state.gml</script>
+      <script>scripts\scr_fireball_spell.gml</script>
     </scripts>
     <scripts name="enemy_states">
       <script>scripts\scr_enemy_idle_state.gml</script>
