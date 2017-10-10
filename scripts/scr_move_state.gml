@@ -92,16 +92,16 @@ if (len == 0) image_index = 0;
 
 switch (face) {
     case RIGHT:
-        sprite_index = spr_player_right;
+        sprite_index = spr_knight_right;
         break;
     case LEFT:
-        sprite_index = spr_player_left;
+        sprite_index = spr_knight_left;
         break;
     case UP:
-        sprite_index = spr_player_up;
+        sprite_index = spr_knight_up;
         break;
     case DOWN:
-        sprite_index = spr_player_down;
+        sprite_index = spr_knight_down;
         break;
     }   
     
