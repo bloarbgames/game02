@@ -53,7 +53,7 @@ if (obj_input.spell_key and obj_player_stats.fireballcd >=1 and obj_player_stats
 }
 
 //call flamethrower state
-if (obj_input.spell_key2 and obj_player_stats.flamethrowercd >= 2 and obj_player_stats.class = CLASS_MAGE) {
+if (obj_input.spell_key2 and obj_player_stats.flamethrowercd >= 1 and obj_player_stats.class = CLASS_MAGE) {
     script_execute(scr_flamethrower_spell);
 }
 }
