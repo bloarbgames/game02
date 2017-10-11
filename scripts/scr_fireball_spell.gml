@@ -1,6 +1,7 @@
 //scr_flamethrower_spell
 
 // creation of one fireball
+if (face = 0) face = 4;
 var angle = 90;
 var p = instance_create(x,y, obj_fireball);
 audio_play_sound(snd_fireball,0,false);
