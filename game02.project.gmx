@@ -3,7 +3,9 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Grab Bag 1</extension>
+  </NewExtensions>
   <sounds name="sound">
     <sound>sound\snd_slime_death</sound>
     <sound>sound\snd_hunter_walk</sound>
@@ -88,6 +90,22 @@
         <sprite>sprites\spr_mage_staff</sprite>
       </sprites>
     </sprites>
+    <sprites name="weapons">
+      <sprites name="swords">
+        <sprite>sprites\spr_sword1</sprite>
+        <sprite>sprites\spr_sword2</sprite>
+        <sprite>sprites\spr_sword3</sprite>
+        <sprite>sprites\spr_sword4</sprite>
+        <sprite>sprites\spr_sword5</sprite>
+        <sprite>sprites\spr_sword6</sprite>
+        <sprite>sprites\spr_sword7</sprite>
+      </sprites>
+      <sprites name="bow and arrow">
+        <sprite>sprites\spr_bowNarrow</sprite>
+        <sprite>sprites\spr_bow</sprite>
+        <sprite>sprites\spr_arrow</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_gras</background>
@@ -101,9 +119,6 @@
       <script>scripts\scr_dash_state.gml</script>
       <script>scripts\scr_get_face.gml</script>
       <script>scripts\scr_get_input.gml</script>
-      <script>scripts\scr_fireball_state.gml</script>
-      <script>scripts\scr_flamethrower_state.gml</script>
-      <script>scripts\scr_fireball_spell.gml</script>
     </scripts>
     <scripts name="enemy_states">
       <script>scripts\scr_enemy_idle_state.gml</script>
@@ -120,6 +135,11 @@
     <script>scripts\scr_string_copy_words.gml</script>
     <script>scripts\scr_save_game.gml</script>
     <script>scripts\scr_load_game.gml</script>
+    <scripts name="spells">
+      <script>scripts\scr_fireball_spell.gml</script>
+      <script>scripts\scr_arrow_spell.gml</script>
+      <script>scripts\scr_flamethrower_spell.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_wall</object>
@@ -145,6 +165,7 @@
     <object>objects\obj_staff_pick</object>
     <object>objects\obj_bow_pick</object>
     <object>objects\obj_weapon</object>
+    <object>objects\obj_player_arrow</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>

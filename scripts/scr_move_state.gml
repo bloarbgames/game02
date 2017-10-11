@@ -1,6 +1,6 @@
 /// scr_move_state
 
-if (obj_input.dash_key and obj_player_stats.class = CLASS_RANG) {
+if (obj_input.interact_key) {
     var xdir = lengthdir_x(8,face*90);
     var ydir = lengthdir_y(8,face*90);
     var speaker =  instance_place(x+xdir,y+ydir,obj_speaker)
@@ -17,39 +17,46 @@ if (obj_input.dash_key and obj_player_stats.class = CLASS_RANG) {
                 if (dialog.text_page > array_length_1d(dialog.text)-1)
                     with (dialog) {
                         instance_destroy();
-                        effect_create_above(ef_explosion,x,y,1,c_gray);
-                            with (obj_sign) {
-                                instance_destroy();
-                                }
-                        
-                }
+                 }
             }
         }
     }
-    ///dash
-    else if (obj_player_stats.stamina > DASH_COST) {
+}
+
+
+// Spells for  Ranger - this spells can only be used when class = CLASS_RANG
+if (obj_player_stats.class = CLASS_RANG) {
+
+///dash   
+    if ( obj_input.spell_key and obj_player_stats.stamina > DASH_COST) {
         state = scr_dash_state;
         alarm[0] = room_speed/6;
         obj_player_stats.stamina -= DASH_COST;
         obj_player_stats.alarm[0] = room_speed;
     }
-
+    if (obj_input.spell_key2) {
+        script_execute(scr_arrow_spell);
     }
+}
+
 if (obj_input.atk_key1) {
     image_index = 0;
     state = scr_attack_state;
 }
 
-// call fireball state
+
+// Spells for  Mages - this spells can only be used when class = CLASS_MAGE
+if (obj_player_stats.class = CLASS_MAGE) {
+// call fireball spell
 if (obj_input.spell_key and obj_player_stats.fireballcd >=1 and obj_player_stats.class = CLASS_MAGE) {
-    state = scr_fireball_state;
+    script_execute(scr_fireball_spell);
 }
 
 //call flamethrower state
 if (obj_input.spell_key2 and obj_player_stats.flamethrowercd >= 2 and obj_player_stats.class = CLASS_MAGE) {
-    state = scr_flamethrower_state;
+    script_execute(scr_flamethrower_spell);
 }
-
+}
 
 // get the axis
 var xaxis = (obj_input.d_key - obj_input.a_key);

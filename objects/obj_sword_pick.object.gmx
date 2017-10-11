@@ -27,6 +27,13 @@
             <kind>1</kind>
             <string>/// set class knight
 obj_player_stats.class = CLASS_KNIGHT;
+obj_player_stats.classname = "Knight";
+obj_player_stats.hp = 10;
+obj_player_stats.maxhp = obj_player_stats.hp;
+obj_player_stats.hpreg = .2;
+obj_player_stats.def = 1;
+obj_player_stats.atkpwr = 1;
+
 </string>
           </argument>
         </arguments>

@@ -34,7 +34,7 @@ yoffset = -40;
 text[0] = "Warning, Slimes ahead!";
 text[1] = "Piss of my yard!";
 text[2] = "You will DIE! &gt;_";
-text[3] = "Selbstzerstoerung JETZT!!!!";
+
 </string>
           </argument>
         </arguments>

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>creator = noone;
+            <string>phy_fixed_rotation = true;
+creator = noone;
 knockback = 2;
 phy_bullet = true ;
 </string>

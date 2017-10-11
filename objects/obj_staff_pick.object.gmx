@@ -27,6 +27,13 @@
             <kind>1</kind>
             <string>/// set class mage
 obj_player_stats.class = CLASS_MAGE;
+obj_player_stats.classname = "Mage";
+obj_player_stats.hpreg = .2;
+obj_player_stats.manareg = .5;
+obj_player_stats.fireballcd = 0;
+obj_player_stats.flamethrowercd = 0;
+obj_player_stats.maxflamethrowercd = 25;
+
 
 </string>
           </argument>

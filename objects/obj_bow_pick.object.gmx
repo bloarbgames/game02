@@ -27,6 +27,13 @@
             <kind>1</kind>
             <string>/// choose rang class
 obj_player_stats.class = CLASS_RANG;
+obj_player_stats.classname = "Ranger"
+obj_player_stats.hp = 5;
+obj_player_stats.hpreg = .2;
+obj_player_stats.def = .2;
+obj_player_stats.ratkpwr = 1;
+obj_player_stats.stamina = 10;
+obj_player_stats.maxstamina = obj_player_stats.stamina;
 </string>
           </argument>
         </arguments>
