@@ -657,7 +657,7 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="12">
+    <constants number="15">
       <constant name="CLASS_RANG">3</constant>
       <constant name="CLASS_KNIGHT">2</constant>
       <constant name="CLASS_MAGE">1</constant>
@@ -670,6 +670,9 @@
       <constant name="DOWN">3</constant>
       <constant name="NEW_ROOM">1</constant>
       <constant name="LOAD">2</constant>
+      <constant name="MOVE">0</constant>
+      <constant name="ATTACK">1</constant>
+      <constant name="IDLE">2</constant>
     </constants>
   </ConfigConstants>
 </Config>

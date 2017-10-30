@@ -40,8 +40,22 @@ dir = 0;
 image_speed = 0;
 state = scr_move_state;
 face =RIGHT;
+movement = MOVE;
 audio_play_sound(snd_background_02,0,true);
 
+// create the sprite array for "normal"
+if (obj_player_stats.class = CLASS_NORMAL) {
+    sprite[RIGHT, MOVE] = spr_player_right;
+    sprite[UP, MOVE] = spr_player_up;
+    sprite[DOWN, MOVE] = spr_player_down;
+    sprite[LEFT, MOVE] = spr_player_left;
+    sprite[RIGHT, ATTACK] = spr_player_attack_right;
+    sprite[UP, ATTACK] = spr_player_attack_up;
+    sprite[DOWN, ATTACK] = spr_player_attack_down;
+    sprite[LEFT, ATTACK] = spr_player_attack_left;
+    }
+    
+    
 </string>
           </argument>
         </arguments>
@@ -114,9 +128,35 @@ state = scr_move_state;
             <string>/// Movement Code for Player
 depth = -y;
 script_execute(state);
+
+switch (obj_player_stats.class) {
+    case CLASS_RANG:       
+        sprite[RIGHT, MOVE] = spr_rang_right;
+        sprite[UP, MOVE] = spr_rang_up;
+        sprite[DOWN, MOVE] = spr_rang_down;
+        sprite[LEFT, MOVE] = spr_rang_left;
+        break;
+        
+    case CLASS_MAGE:
+        sprite[RIGHT, MOVE] = spr_mage_right;
+        sprite[UP, MOVE] = spr_mage_up;
+        sprite[DOWN, MOVE] = spr_mage_down;
+        sprite[LEFT, MOVE] = spr_mage_left;
+        break;
+        
+    case CLASS_KNIGHT:
+        sprite[RIGHT, MOVE] = spr_knight_right;
+        sprite[UP, MOVE] = spr_knight_up;
+        sprite[DOWN, MOVE] = spr_knight_down;
+        sprite[LEFT, MOVE] = spr_knight_left;
+        break;
+    }
+
+sprite_index = sprite[face, movement];
     if (obj_player_stats.hp &lt;= 0) {
     instance_destroy();
 }
+
 
 </string>
           </argument>

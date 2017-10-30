@@ -1,5 +1,5 @@
 /// scr_move_state
-
+movement = MOVE;
 if (obj_input.interact_key) {
     var xdir = lengthdir_x(8,face*90);
     var ydir = lengthdir_y(8,face*90);
@@ -70,7 +70,7 @@ if (xaxis == 0 and yaxis == 0) {
     len = 0;
 } else {
     len = spd;
-    scr_get_face();
+    scr_get_face(dir);
 }
 
 // get the horizintal speed and vertical speed
@@ -96,71 +96,4 @@ phy_position_y += vspd;
 //control the sprite
 image_speed = .15;
 if (len == 0) image_index = 0;
-
-switch (face) {
-    case RIGHT:
-        switch (obj_player_stats.class) {
-            case CLASS_NORMAL:
-                sprite_index = spr_player_right;
-                break;
-            case CLASS_RANG:
-                sprite_index = spr_rang_right;
-                break;
-            case CLASS_MAGE:
-                sprite_index = spr_mage_right;
-                break;
-            case CLASS_KNIGHT:
-                sprite_index = spr_knight_right;
-                break;
-                }
-        break;
-    case LEFT:
-        switch (obj_player_stats.class) {
-            case CLASS_NORMAL:
-                sprite_index = spr_player_left;
-                break;
-            case CLASS_RANG:
-                sprite_index = spr_rang_left;
-                break;
-            case CLASS_MAGE:
-                sprite_index = spr_mage_left;
-                break;
-            case CLASS_KNIGHT:
-                sprite_index = spr_knight_left;
-                break;
-                }
-        break;
-    case UP:
-        switch (obj_player_stats.class) {
-            case CLASS_NORMAL:
-                sprite_index = spr_player_up;
-                break;
-            case CLASS_RANG:
-                sprite_index = spr_rang_up;
-                break;
-            case CLASS_MAGE:
-                sprite_index = spr_mage_up;
-                break;
-            case CLASS_KNIGHT:
-                sprite_index = spr_knight_up;
-                break;
-                }
-                break;
-    case DOWN:
-        switch (obj_player_stats.class) {
-            case CLASS_NORMAL:
-                sprite_index = spr_player_down;
-                break;
-            case CLASS_RANG:
-                sprite_index = spr_rang_down;
-                break;
-            case CLASS_MAGE:
-                sprite_index = spr_mage_down;
-                break;
-            case CLASS_KNIGHT:
-                sprite_index = spr_knight_down;
-                break;
-                }
-                break;
-    }   
    

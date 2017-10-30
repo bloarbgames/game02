@@ -36,6 +36,7 @@
     </sprites>
     <sprite>sprites\spr_rolfi</sprite>
     <sprite>sprites\spr_player_shadow</sprite>
+    <sprite>sprites\spr_sword</sprite>
     <sprite>sprites\spr_dmg</sprite>
     <sprite>sprites\spr_expr</sprite>
     <sprite>sprites\spr_health</sprite>
@@ -43,9 +44,6 @@
     <sprite>sprites\spr_dialogue_box</sprite>
     <sprite>sprites\spr_test</sprite>
     <sprite>sprites\spr_fireball</sprite>
-    <sprite>sprites\sprite20</sprite>
-    <sprite>sprites\sprite21</sprite>
-    <sprite>sprites\sprite22</sprite>
     <sprites name="enemys">
       <sprite>sprites\spr_chinlin_stand_up</sprite>
       <sprite>sprites\spr_chinlin_stand_down</sprite>
@@ -54,9 +52,7 @@
       <sprite>sprites\spr_chinlin_run_right</sprite>
       <sprite>sprites\spr_chinlin_stand_right</sprite>
       <sprite>sprites\spr_slime</sprite>
-      <sprite>sprites\sprite30</sprite>
     </sprites>
-    <sprite>sprites\sprite29</sprite>
     <sprites name="walls">
       <sprite>sprites\spr_door</sprite>
       <sprite>sprites\spr_wall</sprite>
@@ -140,6 +136,7 @@
       <script>scripts\scr_arrow_spell.gml</script>
       <script>scripts\scr_flamethrower_spell.gml</script>
     </scripts>
+    <script>scripts\animation_hit_frame.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_wall</object>
@@ -166,6 +163,7 @@
     <object>objects\obj_bow_pick</object>
     <object>objects\obj_weapon</object>
     <object>objects\obj_player_arrow</object>
+    <object>objects\obj_weapon_animation_parent</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
