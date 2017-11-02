@@ -39,23 +39,37 @@ if (obj_player_stats.class = CLASS_RANG) {
     }
 }
 
-if (obj_input.atk_key1) {
-    image_index = 0;
-    state = scr_attack_state;
+// sword attack with no class picked
+if (obj_player_stats.class = CLASS_NORMAL) {
+    if (obj_input.atk_key1) {
+        image_index = 0;
+        state = scr_attack_state;
+    }
 }
+
+
+// spellls for the knight - this spells can only be used when class = CLASS_KNIGHT
+if (obj_player_stats.class = CLASS_KNIGHT) {
+    if (obj_input.spell_key and obj_player_stats.globalcd >= 1) {
+        state = scr_attack_state_knight;
+        alarm[0] = room_speed/6;
+        obj_player_stats.globalcd -= 1;
+    }
+}
+
 
 
 // Spells for  Mages - this spells can only be used when class = CLASS_MAGE
 if (obj_player_stats.class = CLASS_MAGE) {
 // call fireball spell
-if (obj_input.spell_key and obj_player_stats.fireballcd >=1 and obj_player_stats.class = CLASS_MAGE) {
-    script_execute(scr_fireball_spell);
-}
+    if (obj_input.spell_key and obj_player_stats.fireballcd >=1 and obj_player_stats.class = CLASS_MAGE) {
+        script_execute(scr_fireball_spell);
+    }
 
 //call flamethrower state
-if (obj_input.spell_key2 and obj_player_stats.flamethrowercd >= 1 and obj_player_stats.class = CLASS_MAGE) {
-    script_execute(scr_flamethrower_spell);
-}
+    if (obj_input.spell_key2 and obj_player_stats.flamethrowercd >= 1 and obj_player_stats.class = CLASS_MAGE) {
+        script_execute(scr_flamethrower_spell);
+    }
 }
 
 // get the axis
@@ -78,8 +92,11 @@ hspd = lengthdir_x(len,dir);
 vspd = lengthdir_y(len,dir);
 
 // move
+if (obj_player_stats.globalcd >= 1) {
 phy_position_x += hspd;
 phy_position_y += vspd;
+}
+
 
 /*if (len != 0) {
     audio_sound_gain(snd_hunter_walk,1,5000);
@@ -95,5 +112,5 @@ phy_position_y += vspd;
 
 //control the sprite
 image_speed = .15;
-if (len == 0) image_index = 0;
+if (len == 0 ) image_index = 0;
    

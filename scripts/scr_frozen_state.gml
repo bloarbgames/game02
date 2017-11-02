@@ -1,2 +1,2 @@
-/// scr_frozen_state
-image_blend = c_aqua;
+///scr_frozen_state
+state = scr_move_state;

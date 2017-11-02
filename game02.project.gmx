@@ -108,13 +108,19 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_idle_state.gml</script>
+    <scripts name="spells">
+      <script>scripts\scr_fireball_spell.gml</script>
+      <script>scripts\scr_arrow_spell.gml</script>
+      <script>scripts\scr_flamethrower_spell.gml</script>
+      <script>scripts\scr_attack_state_knight.gml</script>
+    </scripts>
     <scripts name="player_states">
       <script>scripts\scr_attack_state.gml</script>
       <script>scripts\scr_move_state.gml</script>
       <script>scripts\scr_dash_state.gml</script>
       <script>scripts\scr_get_face.gml</script>
       <script>scripts\scr_get_input.gml</script>
+      <script>scripts\scr_globalcd_state.gml</script>
     </scripts>
     <scripts name="enemy_states">
       <script>scripts\scr_enemy_idle_state.gml</script>
@@ -128,14 +134,10 @@
         <script>scripts\scr_chance.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\scr_idle_state.gml</script>
     <script>scripts\scr_string_copy_words.gml</script>
     <script>scripts\scr_save_game.gml</script>
     <script>scripts\scr_load_game.gml</script>
-    <scripts name="spells">
-      <script>scripts\scr_fireball_spell.gml</script>
-      <script>scripts\scr_arrow_spell.gml</script>
-      <script>scripts\scr_flamethrower_spell.gml</script>
-    </scripts>
     <script>scripts\animation_hit_frame.gml</script>
   </scripts>
   <objects name="objects">

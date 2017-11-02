@@ -6,7 +6,7 @@
   <depth>-10</depth>
   <persistent>-1</persistent>
   <parentName>obj_lifeform_parent</parentName>
-  <maskName>spr_player_down</maskName>
+  <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -56,6 +56,31 @@ if (obj_player_stats.class = CLASS_NORMAL) {
     }
     
     
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///this alarm is for the knight attack
+state = scr_move_state;
+
 </string>
           </argument>
         </arguments>
@@ -149,6 +174,10 @@ switch (obj_player_stats.class) {
         sprite[UP, MOVE] = spr_knight_up;
         sprite[DOWN, MOVE] = spr_knight_down;
         sprite[LEFT, MOVE] = spr_knight_left;
+        sprite[RIGHT, ATTACK] = spr_knight_right;
+        sprite[UP, ATTACK] = spr_knight_up;
+        sprite[DOWN, ATTACK] = spr_knight_down;
+        sprite[LEFT, ATTACK] = spr_knight_left;
         break;
     }
 
