@@ -1,4 +1,5 @@
 // scr_arrow_spell
+movement = ATTACK;
 var angle = 90;
 //if (face = RIGHT) face = 4;
 /*

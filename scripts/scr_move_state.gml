@@ -63,7 +63,7 @@ if (obj_player_stats.class = CLASS_KNIGHT) {
 if (obj_player_stats.class = CLASS_MAGE) {
 // call fireball spell
     if (obj_input.spell_key and obj_player_stats.fireballcd >=1 and obj_player_stats.class = CLASS_MAGE) {
-        script_execute(scr_fireball_spell);
+        state = scr_fireball_spell;
     }
 
 //call flamethrower state

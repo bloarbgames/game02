@@ -160,6 +160,10 @@ switch (obj_player_stats.class) {
         sprite[UP, MOVE] = spr_rang_up;
         sprite[DOWN, MOVE] = spr_rang_down;
         sprite[LEFT, MOVE] = spr_rang_left;
+        sprite[RIGHT, ATTACK] = spr_rang_right;
+        sprite[UP, ATTACK] = spr_rang_up;
+        sprite[DOWN, ATTACK] = spr_rang_down;
+        sprite[LEFT, ATTACK] = spr_rang_left;
         break;
         
     case CLASS_MAGE:
@@ -167,6 +171,10 @@ switch (obj_player_stats.class) {
         sprite[UP, MOVE] = spr_mage_up;
         sprite[DOWN, MOVE] = spr_mage_down;
         sprite[LEFT, MOVE] = spr_mage_left;
+        sprite[RIGHT, ATTACK] = spr_mage_right;
+        sprite[UP, ATTACK] = spr_mage_up;
+        sprite[DOWN, ATTACK] = spr_mage_down;
+        sprite[LEFT, ATTACK] = spr_mage_left;
         break;
         
     case CLASS_KNIGHT:
