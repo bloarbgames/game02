@@ -1,4 +1,4 @@
-// scr_fireball_spell
+// scr_frostbolt_spell
 movement = ATTACK;
 var angle = 90;
 var newface = face;
@@ -20,14 +20,15 @@ if (obj_input.s_key and obj_input.d_key) {
     }
 
 
-var p = instance_create(x,y, obj_fireball);
-audio_play_sound(snd_fireball,0,false);
+var p = instance_create(x,y, obj_frostbolt);
+//audio_play_sound(snd_fireball,0,false);
 var xforce = lengthdir_x(20, newface*angle);
 var yforce = lengthdir_y(20, newface*angle);
 p.creator = id;
 with (p) {
     physics_apply_impulse(x,y,xforce,yforce);
 }
-obj_player_stats.fireballcd -= 1;
+alarm[5] = room_speed * 5;
+
 obj_player_stats.globalcd -= 1;
 state = scr_move_state;

@@ -34,7 +34,7 @@ if (obj_player_stats.class = CLASS_RANG) {
         obj_player_stats.stamina -= DASH_COST;
         obj_player_stats.alarm[0] = room_speed;
     }
-    if (obj_input.spell_key2) {
+    if (obj_input.spell_key2 and alarm[4] == -1) {
         script_execute(scr_arrow_spell);
     }
 }
@@ -68,13 +68,20 @@ if (obj_player_stats.class = CLASS_KNIGHT) {
 // Spells for  Mages - this spells can only be used when class = CLASS_MAGE
 if (obj_player_stats.class = CLASS_MAGE) {
 // call fireball spell
-    if (obj_input.spell_key and obj_player_stats.fireballcd >=1 and obj_player_stats.class = CLASS_MAGE) {
+    if (obj_input.spell_key and obj_player_stats.fireballcd >= 1) {
         state = scr_fireball_spell;
     }
 
 //call flamethrower state
-    if (obj_input.spell_key2 and obj_player_stats.flamethrowercd >= 1 and obj_player_stats.class = CLASS_MAGE) {
+/*
+    if (obj_input.spell_key3 and obj_player_stats.flamethrowercd >= 1) {
         script_execute(scr_flamethrower_spell);
+    }
+*/
+
+//call frostbolt state
+    if (obj_input.spell_key2 and alarm[5] == -1) {
+        state = scr_frostbolt_spell;
     }
 }
 

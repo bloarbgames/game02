@@ -47,7 +47,7 @@ while (counter < 3) {
         image_index++;
         damage.visible = false;
         damage.creator = id;
-        damage.damage = obj_player_stats.attack
+        damage.damage = obj_player_stats.attack/3
         counter++;
         }
 state = scr_globalcd_state;

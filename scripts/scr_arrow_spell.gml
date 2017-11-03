@@ -34,3 +34,4 @@ p.creator = id;
 with (p) {
     physics_apply_impulse(x,y,xforce,yforce);
 }
+alarm[4] = room_speed;

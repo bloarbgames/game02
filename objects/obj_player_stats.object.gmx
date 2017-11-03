@@ -263,7 +263,12 @@ switch (class) {
         var roundefire = floor(fireballcd);
         var roundflame = floor(flamethrowercd);
         draw_text(32,96, "Fireball charges: " + string(roundefire));
-        draw_text(32,112, "Flamethrower charges: " + string(roundflame));
+        if (obj_player.alarm[5] == -1) {
+            draw_text(32,112, "Frostbolt ready!");
+        }
+        else {
+            draw_text(32,112, "Frostbolt on cool down!");
+        }
         break;
     case CLASS_KNIGHT:
         draw_text(32,96, "Attackpower: " + string(roundhitpower));
