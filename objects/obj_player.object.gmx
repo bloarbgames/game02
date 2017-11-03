@@ -61,6 +61,32 @@ if (obj_player_stats.class = CLASS_NORMAL) {
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// alarm for decreasing the defense rating through shield boost spell
+obj_player_stats.defrating--;
+state = scr_move_state;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="2">
       <action>
         <libid>1</libid>
@@ -290,7 +316,7 @@ with (obj_player_stats) {
         maxhp+=2;
         stamina +=2;
         maxstamina +=2;
-        attack +=1;
+        atkpwr += 1;
     }
     }
 </string>

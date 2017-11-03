@@ -55,6 +55,12 @@ if (obj_player_stats.class = CLASS_KNIGHT) {
         alarm[0] = room_speed/6;
         obj_player_stats.globalcd -= 1;
     }
+    
+    if (obj_input.spell_key2 and obj_player_stats.globalcd >= 1 and !alarm[3] ) {
+        state = scr_shield_boost_spell;
+        alarm[0] = room_speed/6;
+        obj_player_stats.globalcd -= 1;
+    }
 }
 
 

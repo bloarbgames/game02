@@ -3,9 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions>
-    <extension index="0">extensions\Grab Bag 1</extension>
-  </NewExtensions>
+  <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_slime_death</sound>
     <sound>sound\snd_hunter_walk</sound>
@@ -113,6 +111,7 @@
       <script>scripts\scr_arrow_spell.gml</script>
       <script>scripts\scr_flamethrower_spell.gml</script>
       <script>scripts\scr_attack_state_knight.gml</script>
+      <script>scripts\scr_shield_boost_spell.gml</script>
     </scripts>
     <scripts name="player_states">
       <script>scripts\scr_attack_state.gml</script>
@@ -121,6 +120,7 @@
       <script>scripts\scr_get_face.gml</script>
       <script>scripts\scr_get_input.gml</script>
       <script>scripts\scr_globalcd_state.gml</script>
+      <script>scripts\scr_cooldown.gml</script>
     </scripts>
     <scripts name="enemy_states">
       <script>scripts\scr_enemy_idle_state.gml</script>
@@ -166,6 +166,7 @@
     <object>objects\obj_weapon</object>
     <object>objects\obj_player_arrow</object>
     <object>objects\obj_weapon_animation_parent</object>
+    <object>objects\obj_shield_boost_effect</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>

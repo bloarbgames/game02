@@ -31,7 +31,7 @@ maxhp = hp;
 expr = 0;
 maxexpr = 3;
 level = 1;
-attack = 1;
+attack = 2;
 class = CLASS_NORMAL;
 classname = "Noname";
 hpreg = 0;
@@ -40,12 +40,14 @@ fireballcd = 0;
 flamethrowercd = 0;
 maxflamethrowercd = 25;
 def = 0;
+defrating = 1;
 atkpwr = 0;
 ratkpwr = 0;
 stamina = 10;
 maxstamina = stamina;
 hittimer = 0;
 globalcd = 1;
+hitpower = atkpwr + attack;
 
 // get the players xstart and ystart position
 if (instance_exists(obj_player)) {
@@ -135,8 +137,12 @@ room_start_action = NEW_ROOM;
           <argument>
             <kind>1</kind>
             <string>/// control the stats
+var timer = 0;
 if (hp &lt;= 0) {
 hp = 0;
+}
+if (class = CLASS_KNIGHT) {
+def = defrating*level;
 }
 
 // stamina recharge
@@ -242,6 +248,9 @@ room_start_action = NEW_ROOM;
             <string>/// draw the stats
 var roundmaxexp = floor(maxexpr);
 var roundglobal = floor(globalcd);
+var roundhitpower = floor(hitpower);
+var rounddefrating = floor(def);
+
 
 if (class != CLASS_NORMAL) {
 draw_text(32,16, "Class: " + string(classname));
@@ -257,7 +266,8 @@ switch (class) {
         draw_text(32,112, "Flamethrower charges: " + string(roundflame));
         break;
     case CLASS_KNIGHT:
-        draw_text(32,96, "Global Cooldown: " + string(roundglobal));
+        draw_text(32,96, "Attackpower: " + string(roundhitpower));
+        draw_text(32,112, "Defense: " + string(rounddefrating));
         break;
     case CLASS_RANG:
         var roundedstam = floor(stamina);
