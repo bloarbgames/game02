@@ -27,12 +27,13 @@
             <kind>1</kind>
             <string>///initialize the frostbolt
 event_inherited();
+knockback = 0;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
+    <event eventtype="4" ename="obj_lifeform_parent">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,73 +50,13 @@ event_inherited();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///alarm for freeze
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>402</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_collision</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///freeze
-oldspeed =  other.spd;
-alarm[0] = room_speed * 5;
-if (other.id != creator) {
-    instance_destroy();
-    sec = room_speed;
-    ft = 5;
-    //passed time (pt)
-    pt=0;
-    while (pt &lt; sec*ft) {
-        other.spd = 0;
-        pt++;
-    }
-    other.spd = oldspeed;           
-}
+            <string>///collide
+event_inherited();
 
+if (other.id != creator) {
+other.spd = other.spd/4;
+other.alarm[11] = room_speed * 5;
+}
 </string>
           </argument>
         </arguments>
